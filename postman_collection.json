@@ -1,0 +1,42 @@
+{
+  "info": {
+    "name": "Employee API - Sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Employees",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Employee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"name\\\": \\\"Test\\\",\\n  \\\"email\\\": \\\"test@example.com\\\",\\n  \\\"role\\\": \\\"Dev\\\",\\n  \\\"salary\\\": 30000\\n}"
+        }
+      }
+    }
+  ]
+}
